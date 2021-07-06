@@ -45,33 +45,33 @@
 
 // API fetching
 // Tasty
-fetch("https://salty-mountain-68764.herokuapp.com/https://tasty.p.rapidapi.com/recipes/list?from=0&size=1&tags=under_30_minutes&q=chicken", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-key": "9db6727369mshcadc7a2e617b437p14279djsnff586e532c9e",
-		"x-rapidapi-host": "tasty.p.rapidapi.com"
-	}
-})
-.then(response => {
-	return response.json();
-})
-.then(data => {
-	console.log(data);
-})
-.catch(err => {
-	console.error(err);
-});
+// fetch("https://salty-mountain-68764.herokuapp.com/https://tasty.p.rapidapi.com/recipes/list?from=0&size=1&tags=under_30_minutes&q=chicken", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-key": "9db6727369mshcadc7a2e617b437p14279djsnff586e532c9e",
+// 		"x-rapidapi-host": "tasty.p.rapidapi.com"
+// 	}
+// })
+// .then(response => {
+// 	return response.json();
+// })
+// .then(data => {
+// 	console.log(data);
+// })
+// .catch(err => {
+// 	console.error(err);
+// });
 
 
 // The Movie Database or IMDB alternative (RapidAPI)
-fetch("https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/movie/550?api_key=1f0c12a5a877dc629a002fa2c6169442", {
-})
-.then(response => {
-	return response.json();
-})
-.then(data => {
-	console.log(data);
-})
-.catch(err => {
-	console.error(err);
-});
+// fetch("https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/movie/550?api_key=1f0c12a5a877dc629a002fa2c6169442", {
+// })
+// .then(response => {
+// 	return response.json();
+// })
+// .then(data => {
+// 	console.log(data);
+// })
+// .catch(err => {
+// 	console.error(err);
+// });
