@@ -65,6 +65,18 @@
 // Any use of the TMDb logo in your application shall be less prominent than the logo or mark that primarily describes the application and your use of the TMDb logo shall not imply any endorsement by TMDb.
 
 // Footer with necessary info
+
+// On search button click, grab input and select values
+$("#searchBtn").click(function(){
+    var ingredInput = $("#searchInput").val();
+    var genreInput = $("#genreSel").val();
+    console.log(ingredInput);
+    console.log(genreInput);
+});
+
+// Then save to local storage
+
+
 // API fetching
 
 // Tasty
@@ -117,8 +129,6 @@
     // var war = warSel.value (10752);
     // var western = westernSel.value (37);
 
-    // 
-
     // fetch("https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=1f0c12a5a877dc629a002fa2c6169442&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_genres=35", {
     // })
     // .then(response => {
@@ -133,7 +143,6 @@
     // .catch(err => {
     //     console.error(err);
     // });
-
 
 
 // Using DOM manipulation
