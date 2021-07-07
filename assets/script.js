@@ -81,40 +81,40 @@
 // The Movie Database or IMDB alternative (RapidAPI)
 
     // Genre variables
-    var action = actionSel.value (28);
-    var adventure = adventureSel.value (12);
-    var animation = animationSel.value (16);
-    var comedy = comedySel.value (35);
-    var crime = crimeSel.value (80);
-    var documentary = documentarySel.value (99);
-    var drama = dramaSel.value (18);
-    var family = familySel.value (10751);
-    var fantasy = fantasySel.value (14);
-    var history = historySel.value (36);
-    var horror = horrorSel.value (27);
-    var music = musicSel.value (10402);
-    var mystery = mysterySel.value (9648);
-    var romance = romanceSel.value (10749);
-    var scienceFiction = scienceFictionSel.value (878);
-    var tvMovie = tvMovieSel.value (10770);
-    var thriller = thriller.value (53);
-    var war = warSel.value (10752);
-    var western = westernSel.value (37);
+    // var action = actionSel.value (28);
+    // var adventure = adventureSel.value (12);
+    // var animation = animationSel.value (16);
+    // var comedy = comedySel.value (35);
+    // var crime = crimeSel.value (80);
+    // var documentary = documentarySel.value (99);
+    // var drama = dramaSel.value (18);
+    // var family = familySel.value (10751);
+    // var fantasy = fantasySel.value (14);
+    // var history = historySel.value (36);
+    // var horror = horrorSel.value (27);
+    // var music = musicSel.value (10402);
+    // var mystery = mysterySel.value (9648);
+    // var romance = romanceSel.value (10749);
+    // var scienceFiction = scienceFictionSel.value (878);
+    // var tvMovie = tvMovieSel.value (10770);
+    // var thriller = thriller.value (53);
+    // var war = warSel.value (10752);
+    // var western = westernSel.value (37);
 
-    fetch("https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=1f0c12a5a877dc629a002fa2c6169442&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_genres=35", {
-    })
-    .then(response => {
-        return response.json();
-    })
-    .then(data => {
-        console.log(data);
+    // fetch("https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=1f0c12a5a877dc629a002fa2c6169442&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_genres=35", {
+    // })
+    // .then(response => {
+    //     return response.json();
+    // })
+    // .then(data => {
+    //     console.log(data);
 
-        // do all of the fun stuff
+    //     // do all of the fun stuff
 
-    })
-    .catch(err => {
-        console.error(err);
-    });
+    // })
+    // .catch(err => {
+    //     console.error(err);
+    // });
 
 
 

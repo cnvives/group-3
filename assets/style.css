@@ -50,6 +50,13 @@ body {
     color: red;
 }
 
+.select {
+    /* display: flex; */
+    margin: auto;
+    margin-top: 4px;
+    width: 60%;
+}
+
 .searchBtn {
     display: flex;
     margin: auto;
