@@ -4,11 +4,13 @@
 // Will have a nav bar on top with links to about/contact info, socials, etc
 
 // Background images (split?) showing something related to a theater/movie on one side and food on the other
-
-
 // At least two primary text inputs
 
 // At least two primary text inputs (with tooltips to describe )
+
+// At least two primary text inputs (with tooltips to describe )
+
+
 
 // Movie genre
 // Recipe ingredient or style
@@ -42,6 +44,13 @@
 // Footer with necessary info
 
 // console.log("connected");
+
+// Reference the API's as source of data
+// You shall use the TMDb logo to identify your use of the TMDb APIs.
+// You shall place the following notice prominently on your application: "This product uses the TMDb API but is not endorsed or certified by TMDb."
+// Any use of the TMDb logo in your application shall be less prominent than the logo or mark that primarily describes the application and your use of the TMDb logo shall not imply any endorsement by TMDb.
+
+// Footer with necessary info
 
 // Reference the API's as source of data
 // You shall use the TMDb logo to identify your use of the TMDb APIs.
