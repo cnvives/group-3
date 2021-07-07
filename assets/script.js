@@ -10,8 +10,6 @@
 
 // At least two primary text inputs (with tooltips to describe )
 
-
-
 // Movie genre
 // Recipe ingredient or style
 
@@ -77,7 +75,7 @@ $("#searchBtn").click(function(){
 // Then save to local storage
 
 
-// API fetching
+// API fetching (commented out to prevent unnecessary fetch requests)
 
 // Tasty
 
