@@ -5,7 +5,9 @@
 
 // Background images (split?) showing something related to a theater/movie on one side and food on the other
 
-// At least two primary text inputs
+
+    // At least two primary text inputs (with tooltips to describe )
+
 
 // Movie genre
 // Recipe ingredient or style
@@ -30,6 +32,7 @@
 
 // Then append that usable info to the respective cards on the page
 
+
 // Ability to re-roll search results
 // First try to display the next result from the API object array
 // If successful, try to randomize the re-roll result
@@ -38,4 +41,45 @@
 
 // Footer with necessary info
 
-console.log("connected");
+
+    // Reference the API's as source of data
+        // You shall use the TMDb logo to identify your use of the TMDb APIs.
+        // You shall place the following notice prominently on your application: "This product uses the TMDb API but is not endorsed or certified by TMDb."
+        // Any use of the TMDb logo in your application shall be less prominent than the logo or mark that primarily describes the application and your use of the TMDb logo shall not imply any endorsement by TMDb.
+
+    // Footer with necessary info
+
+
+
+// API fetching
+// Tasty
+// fetch("https://salty-mountain-68764.herokuapp.com/https://tasty.p.rapidapi.com/recipes/list?from=0&size=1&tags=under_30_minutes&q=chicken", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-key": "9db6727369mshcadc7a2e617b437p14279djsnff586e532c9e",
+// 		"x-rapidapi-host": "tasty.p.rapidapi.com"
+// 	}
+// })
+// .then(response => {
+// 	return response.json();
+// })
+// .then(data => {
+// 	console.log(data);
+// })
+// .catch(err => {
+// 	console.error(err);
+// });
+
+
+// The Movie Database or IMDB alternative (RapidAPI)
+// fetch("https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/movie/550?api_key=1f0c12a5a877dc629a002fa2c6169442", {
+// })
+// .then(response => {
+// 	return response.json();
+// })
+// .then(data => {
+// 	console.log(data);
+// })
+// .catch(err => {
+// 	console.error(err);
+// });
