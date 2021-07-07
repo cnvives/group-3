@@ -1,7 +1,5 @@
 html,
 body {
-
-   
     height: 100%;
     background-color: black;
 }
@@ -68,9 +66,4 @@ footer {
     text-align: center;
     color: red;
     font-weight: bold;
-}
-
-.columns { 
-    margin:0 
-
 }
