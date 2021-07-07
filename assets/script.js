@@ -42,36 +42,89 @@
     // Footer with necessary info
 
 
+// Local storage
+    // saves the search inputs from the first/landing page in local storage
+        // Then redirect to the second page
+
+    // Those saved inputs would then be accessed by the second page 
+        // Then the API call would run
+
 
 // API fetching
+
 // Tasty
-// fetch("https://salty-mountain-68764.herokuapp.com/https://tasty.p.rapidapi.com/recipes/list?from=0&size=1&tags=under_30_minutes&q=chicken", {
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-key": "9db6727369mshcadc7a2e617b437p14279djsnff586e532c9e",
-// 		"x-rapidapi-host": "tasty.p.rapidapi.com"
-// 	}
-// })
-// .then(response => {
-// 	return response.json();
-// })
-// .then(data => {
-// 	console.log(data);
-// })
-// .catch(err => {
-// 	console.error(err);
-// });
+    // Search for recipes that can be made in under 30 minutes, and will pass in the searched ingredient pulled from input
+
+    // var ingredInput = docElememt;
+
+    // fetch("https://salty-mountain-68764.herokuapp.com/https://tasty.p.rapidapi.com/recipes/list?from=0&size=1&tags=under_30_minutes&q=chicken", {
+    //     "method": "GET",
+    //     "headers": {
+    //         "x-rapidapi-key": "9db6727369mshcadc7a2e617b437p14279djsnff586e532c9e",
+    //         "x-rapidapi-host": "tasty.p.rapidapi.com"
+    //     }
+    // })
+    // .then(response => {
+    //     return response.json();
+    // })
+    // .then(data => {
+    //     console.log(data);
+
+    //     // do all of the fun stuff
+
+    // })
+    // .catch(err => {
+    //     console.error(err);
+    // });
 
 
 // The Movie Database or IMDB alternative (RapidAPI)
-// fetch("https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/movie/550?api_key=1f0c12a5a877dc629a002fa2c6169442", {
-// })
-// .then(response => {
-// 	return response.json();
-// })
-// .then(data => {
-// 	console.log(data);
-// })
-// .catch(err => {
-// 	console.error(err);
-// });
+
+    // Genre variables
+    var action = actionSel.value (28);
+    var adventure = adventureSel.value (12);
+    var animation = animationSel.value (16);
+    var comedy = comedySel.value (35);
+    var crime = crimeSel.value (80);
+    var documentary = documentarySel.value (99);
+    var drama = dramaSel.value (18);
+    var family = familySel.value (10751);
+    var fantasy = fantasySel.value (14);
+    var history = historySel.value (36);
+    var horror = horrorSel.value (27);
+    var music = musicSel.value (10402);
+    var mystery = mysterySel.value (9648);
+    var romance = romanceSel.value (10749);
+    var scienceFiction = scienceFictionSel.value (878);
+    var tvMovie = tvMovieSel.value (10770);
+    var thriller = thriller.value (53);
+    var war = warSel.value (10752);
+    var western = westernSel.value (37);
+
+    fetch("https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=1f0c12a5a877dc629a002fa2c6169442&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_genres=35", {
+    })
+    .then(response => {
+        return response.json();
+    })
+    .then(data => {
+        console.log(data);
+
+        // do all of the fun stuff
+
+    })
+    .catch(err => {
+        console.error(err);
+    });
+
+
+
+// Using DOM manipulation
+    // Add the associated images, descriptions, recipe ingredients/instructions, names to the various parts of the cards
+
+// Re-rolling 
+    // Maybe store the API call results in local storage
+    // Retrieve another random object from the returned array 
+    // Repeat the DOM manipulation with that new object?
+
+// Epanded recipe instructions/ingredients list
+    // Upon clicking on the initial recipe card, display another card/modal(?) with a more detailed list
