@@ -1,0 +1,73 @@
+html,
+body {
+    height: 100%;
+    background-color: black;
+}
+
+.navbar,
+.navbar-menu,
+.navbar-end,
+.navbar-item,
+.navbar-dropdown,
+.navbar-link {
+    background-color: red;
+    color: black;
+}
+
+.inputHolder {
+    padding: 10px;
+    border: 3px solid red;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px red;
+}
+
+.inputTitle {
+    color: red;
+    font-weight: bold;
+    font-size: 200%;
+    text-align: center;
+}
+
+.subtitle {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.is-three-fifths {
+    margin: 30%;
+}
+
+.input {
+    display: flex;
+    margin: auto;
+    margin-top: 4px;
+    padding: 10px;
+    width: 60%;
+    border: 3px solid red;
+    background-color: white;
+    color: red;
+}
+
+.searchBtn {
+    display: flex;
+    margin: auto;
+    margin-top: 4px;
+    padding: 10px;
+    border: 3px solid red;
+    background-color: black;
+    color: red;
+}
+
+footer {
+    bottom: 0px;
+    padding: 10px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.columns { 
+    margin:0 
+}
