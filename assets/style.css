@@ -1,5 +1,7 @@
 html,
 body {
+
+   
     height: 100%;
     background-color: black;
 }
@@ -70,4 +72,5 @@ footer {
 
 .columns { 
     margin:0 
+
 }
