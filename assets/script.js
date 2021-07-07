@@ -65,18 +65,23 @@
 // Any use of the TMDb logo in your application shall be less prominent than the logo or mark that primarily describes the application and your use of the TMDb logo shall not imply any endorsement by TMDb.
 
 // Footer with necessary info
+
+// On search button click, grab input and select values
+$("#searchBtn").click(function(){
+    var ingredInput = $("#searchInput").val();
+    var genreInput = $("#genreSel").val();
+    console.log(ingredInput);
+    console.log(genreInput);
+});
+
+// Then save to local storage
+
+
 // API fetching
 
 // Tasty
 
     // Search for recipes that can be made in under 30 minutes, and will pass in the searched ingredient pulled from input
-
-    $("#searchBtn").click(function(){
-        var ingredInput = $("#searchInput").val();
-        var genreInput = $("#genreSel").val();
-        console.log(ingredInput);
-        console.log(genreInput);
-    });
 
     // var ingredInput = docElememt;
 
