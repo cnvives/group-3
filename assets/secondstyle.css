@@ -1,57 +1,4 @@
 html,
-<<<<<<< HEAD
-                                body {
-                                    background-color: black;
-                                    height: 100%;
-                                }
-                                
-                                .container {
-                                    box-sizing: 35px;
-                                    width: 500px;
-                                    justify-content: center;
-                                }
-                                
-                                .container2 {
-                                    box-sizing: 35px;
-                                    width: 500px;
-                                }
-                                
-                                .columns {
-                                    display: grid;
-                                    justify-content: center;
-                                    align-content: center;
-                                }
-                                
-                                button {
-                                    border-radius: 15px;
-                                    font-size: 15px;
-                                    color: red;
-                                    font-weight: bold;
-                                    background-color: black;
-                                    justify-content: center;
-                                }
-                                
-                                .database {
-                                    color: red;
-                                    text-align: center;
-                                    float: right;
-                                    margin-right: 320px;
-                                    font-size: 25px;
-                                }
-                                
-                                .databaseName {
-                                    color: red;
-                                    text-align: center;
-                                    float: left;
-                                    margin-left: 200px;
-                                    font-size: 25px;
-                                }
-                                
-                                .content {
-                                    color: red;
-                                    font-weight: bold;
-                                }
-=======
 body {
     background-color: black;
     height: 100%;
@@ -103,4 +50,3 @@ button {
     color: red;
     font-weight: bold;
 }
->>>>>>> 3dbbdc3a766c825723104e70295b8f099fb2bb21
