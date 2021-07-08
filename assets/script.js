@@ -82,62 +82,7 @@ $("#searchBtn").click(function(){
 
 });
 
-
-
-
-// API fetching (commented out to prevent unnecessary fetch requests)
-
-// Tasty
-
-    // Search for recipes that can be made in under 30 minutes, and will pass in the searched ingredient pulled from input
-
-
-    // var ingredient = JSON.parse(localStorage.getItem("ingredient"));
-    // console.log(ingredient);
-    // var genre = JSON.parse(localStorage.getItem("genre"));
-    // console.log(genre);
-
-
-    // fetch(`https://salty-mountain-68764.herokuapp.com/https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes&q=${ingredient}`, {
-    //     "method": "GET",
-    //     "headers": {
-    //         "x-rapidapi-key": "9db6727369mshcadc7a2e617b437p14279djsnff586e532c9e",
-    //         "x-rapidapi-host": "tasty.p.rapidapi.com"
-    //     }
-    // })
-    // .then(response => {
-    //     return response.json();
-    // })
-    // .then(data => {
-    //     console.log(data);
-
-    //     // do all of the fun stuff
-
-    // })
-    // .catch(err => {
-    //     console.error(err);
-    // });
-
-
-// The Movie Database or IMDB alternative (RapidAPI)
-
-    // To search by genre, we just need to change the last number of this fetch URL (after genres=...")
-
-    // fetch(`https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=1f0c12a5a877dc629a002fa2c6169442&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_genres=${genre}`, {
-    // })
-    // .then(response => {
-    //     return response.json();
-    // })
-    // .then(data => {
-    //     console.log(data);
-
-    //     // do all of the fun stuff
-
-    // })
-    // .catch(err => {
-    //     console.error(err);
-    // });
-
+// API fetching
 
 // Using DOM manipulation
     // Add the associated images, descriptions, recipe ingredients/instructions, names to the various parts of the cards
