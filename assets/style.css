@@ -67,6 +67,12 @@ body {
     color: red;
 }
 
+.navbar-link:not(.is-arrowless)::after, .select:not(.is-multiple):not(.is-loading)::after {
+    border: none;
+}
+
+
+
 #genreSel {
     display: flex;
     margin: auto;
