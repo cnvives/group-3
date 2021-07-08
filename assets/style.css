@@ -55,7 +55,7 @@ body {
     margin: auto;
     margin-top: 4px;
     padding: 10px;
-    width: 30%;
+    width: 50%;
     border: 3px solid red;
     background-color: white;
     color: red;
@@ -63,14 +63,18 @@ body {
 
 .select {
     display: flex;
-    margin: auto;
     color: red;
+    width: 100%;
+}
+
+.select::after {
+    display: none;
 }
 
 #genreSel {
     display: flex;
     margin: auto;
-    width: 30%;
+    width: 50%;
     border: 3px solid red;
     background-color: white;
     color: red;

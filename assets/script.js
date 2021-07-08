@@ -78,7 +78,7 @@ $("#searchBtn").click(function(){
     localStorage.setItem("ingredient", JSON.stringify(ingredInput));
     localStorage.setItem("genre", JSON.stringify(genreInput));
 
-    // location.replace(redirectURL);
+    location.replace(redirectURL);
 
 });
 
