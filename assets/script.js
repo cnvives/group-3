@@ -83,6 +83,8 @@ $("#searchBtn").click(function(){
 });
 
 
+
+
 // API fetching (commented out to prevent unnecessary fetch requests)
 
 // Tasty
