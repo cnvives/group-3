@@ -17,7 +17,7 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="avatar">
-                            <img src="https://duetaz.org/wp-content/uploads/2018/07/Movie-Night.jpg" alt="Movie-Night" />
+                            <img class="movieImage"src="https://duetaz.org/wp-content/uploads/2018/07/Movie-Night.jpg" alt="Movie-Night" />
                         </figure>
                     </div>
                     <div class="card-content">
@@ -28,13 +28,13 @@
                             </figure> -->
                             </div>
                             <div class="media-content">
-                                <p class="title is-4">Movie title/info</p>
+                                <p class="title is-4 movieTitle">Movie title/info</p>
 
-                                <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                                <p class="subtitle is-6 releaseDate"></p>
                             </div>
                         </div>
 
-                        <div class="content">
+                        <div class="content overview">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
                             <!-- <a href="#">#css</a> <a href="#">#responsive</a> -->
                             <br />
@@ -52,7 +52,7 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="avatar">
-                            <img src="https://duetaz.org/wp-content/uploads/2018/07/Movie-Night.jpg" alt="Recipe" />
+                            <img class="recipeImage"src="https://duetaz.org/wp-content/uploads/2018/07/Movie-Night.jpg" alt="Recipe" />
                         </figure>
                     </div>
                     <div class="card-content">
@@ -63,13 +63,13 @@
                             </figure> -->
                             </div>
                             <div class="media-content">
-                                <p class="title is-4">Recipe title/info</p>
+                                <p class="title is-4 recipeTitle">Recipe title/info</p>
 
                                 <!-- <p class="subtitle is-6">@johnsmith</p> -->
                             </div>
                         </div>
 
-                        <div class="content">
+                        <div class="content recipeInstructions">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
                             <!-- <a href="#">#css</a> <a href="#">#responsive</a> -->
                             <br />
@@ -85,8 +85,22 @@
 
     <div class="databaseName">Movies provided by The Movie Database (TMD)</div>
 
+
+
+   
+    <button onclick="goBack()">Home Page</button> 
+
+        <script>
+           
+            function goBack() {
+              location.assign("./index.html");
+            }
+            </script>
+
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="./assets/script.js"></script>
+    <script src="assets/secondScript.js"></script>
 </body>
 
 
