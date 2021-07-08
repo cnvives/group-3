@@ -41,14 +41,11 @@ $(document).ready( function () {
 
         var i = Math.floor(Math.random() * data.results.length)
 
-
         recipeTitle.textContent=data.results[i].name;
         console.log(data.results[i].name);
 
-
         recipeImage.src=data.results[i].thumbnail_url;
         console.log(data.results[i].thumbnail_url);
-
 
         for (var index = 0; index < data.results[i].sections[0].components.length; index++) {
              
@@ -57,18 +54,9 @@ $(document).ready( function () {
             ingredientItem.textContent=data.results[i].sections[0].components[index].raw_text;
 
             ingredientList.appendChild(ingredientItem)
-            
         }
         
         console.log(data.results[i].name);
-
-
-        // do all of the fun stuff
-        // renderRecipe(); {
-
-
-        // }
-
     })
     .catch(err => {
         console.error(err);
@@ -83,11 +71,6 @@ fetch(`https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/d
         var i = Math.floor(Math.random() * data.results.length)
         console.log(data);
 
-        // do all of the fun stuff
-        // renderMovie(); {
-
-
-        // }
         movieTitle.textContent=data.results[i].title;
         console.log(data.results[i].title);
 
@@ -101,17 +84,10 @@ fetch(`https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/d
 
         moviePoster.src=`https://image.tmdb.org/t/p/w500${posterImgPath}`;
         console.log(data.results[i].poster_path);
-
-        //https://image.tmdb.org/t/p/w500
-
-
-
     })
     .catch(err => {
         console.error(err);
     });
-
-    
   });
 
    
