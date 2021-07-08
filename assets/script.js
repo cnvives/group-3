@@ -167,8 +167,3 @@ $("#searchBtn").click(function(){
     // Repeat the DOM manipulation with that new object?
 
 // Expanded recipe instructions/ingredients list
-<<<<<<< HEAD
-    // Upon clicking on the initial recipe card, display another card/modal(?) with a more detailed list
-=======
-    // Upon clicking on the initial recipe card, display another card/modal(?) with a more detailed list
->>>>>>> 3dbbdc3a766c825723104e70295b8f099fb2bb21
