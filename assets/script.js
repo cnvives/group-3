@@ -64,15 +64,23 @@
 
 // Footer with necessary info
 
+
+var redirectURL = './secondpage.html'
+
 // On search button click, grab input and select values
 $("#searchBtn").click(function(){
     var ingredInput = $("#searchInput").val();
     var genreInput = $("#genreSel").val();
-    console.log(ingredInput);
-    console.log(genreInput);
-});
+    // console.log(ingredInput);
+    // console.log(genreInput);
 
-// Then save to local storage
+    // Then save to local storage
+    localStorage.setItem("ingredient", JSON.stringify(ingredInput));
+    localStorage.setItem("genre", JSON.stringify(genreInput));
+
+    // location.replace(redirectURL);
+
+});
 
 
 // API fetching (commented out to prevent unnecessary fetch requests)
@@ -81,9 +89,14 @@ $("#searchBtn").click(function(){
 
     // Search for recipes that can be made in under 30 minutes, and will pass in the searched ingredient pulled from input
 
-    // var ingredInput = docElememt;
 
-    // fetch("https://salty-mountain-68764.herokuapp.com/https://tasty.p.rapidapi.com/recipes/list?from=0&size=1&tags=under_30_minutes&q=chicken", {
+    // var ingredient = JSON.parse(localStorage.getItem("ingredient"));
+    // console.log(ingredient);
+    // var genre = JSON.parse(localStorage.getItem("genre"));
+    // console.log(genre);
+
+
+    // fetch(`https://salty-mountain-68764.herokuapp.com/https://tasty.p.rapidapi.com/recipes/list?from=0&size=1&tags=under_30_minutes&q=${ingredient}`, {
     //     "method": "GET",
     //     "headers": {
     //         "x-rapidapi-key": "9db6727369mshcadc7a2e617b437p14279djsnff586e532c9e",
@@ -129,7 +142,7 @@ $("#searchBtn").click(function(){
 
     // To search by genre, we just need to change the last number of this fetch URL (after genres=...")
 
-    // fetch("https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=1f0c12a5a877dc629a002fa2c6169442&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_genres=35", {
+    // fetch(`https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=1f0c12a5a877dc629a002fa2c6169442&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_genres=${genre}`, {
     // })
     // .then(response => {
     //     return response.json();
@@ -155,4 +168,3 @@ $("#searchBtn").click(function(){
 
 // Expanded recipe instructions/ingredients list
     // Upon clicking on the initial recipe card, display another card/modal(?) with a more detailed list
-
