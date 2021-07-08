@@ -96,7 +96,7 @@ $("#searchBtn").click(function(){
     // console.log(genre);
 
 
-    // fetch(`https://salty-mountain-68764.herokuapp.com/https://tasty.p.rapidapi.com/recipes/list?from=0&size=1&tags=under_30_minutes&q=${ingredient}`, {
+    // fetch(`https://salty-mountain-68764.herokuapp.com/https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes&q=${ingredient}`, {
     //     "method": "GET",
     //     "headers": {
     //         "x-rapidapi-key": "9db6727369mshcadc7a2e617b437p14279djsnff586e532c9e",
