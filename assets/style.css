@@ -4,20 +4,31 @@ body {
     background-color: white;
 }
 
+.navTitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+    font-size: 150%;
+    font-weight: bold;
+}
+
 .navbar,
 .navbar-menu,
 .navbar-end,
 .navbar-item,
 .navbar-dropdown,
 .navbar-link {
-    background-color: red;
-    color: black;
+    background-color: white;
+    color: red;
+    font-weight: bold;
 }
 
 .inputHolder {
     padding: 10px;
     border: 3px solid red;
-    background-color: black;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 8px 8px 15px red;
 }
@@ -44,7 +55,7 @@ body {
     margin: auto;
     margin-top: 4px;
     padding: 10px;
-    width: 40%;
+    width: 30%;
     border: 3px solid red;
     background-color: white;
     color: red;
@@ -53,7 +64,16 @@ body {
 .select {
     display: flex;
     margin: auto;
-    width: 20%;
+    color: red;
+}
+
+#genreSel {
+    display: flex;
+    margin: auto;
+    width: 30%;
+    border: 3px solid red;
+    background-color: white;
+    color: red;
 }
 
 .searchBtn {
