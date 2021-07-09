@@ -10,8 +10,6 @@
 
 // At least two primary text inputs (with tooltips to describe )
 
-
-
 // Movie genre
 // Recipe ingredient or style
 
@@ -39,18 +37,14 @@
 // First try to display the next result from the API object array
 // If successful, try to randomize the re-roll result
 
-// Reference the API's as source of data
-
 // Footer with necessary info
 
-// console.log("connected");
+// Local storage
+// saves the search inputs from the first/landing page in local storage
+// Then redirect to the second page
 
-// Reference the API's as source of data
-// You shall use the TMDb logo to identify your use of the TMDb APIs.
-// You shall place the following notice prominently on your application: "This product uses the TMDb API but is not endorsed or certified by TMDb."
-// Any use of the TMDb logo in your application shall be less prominent than the logo or mark that primarily describes the application and your use of the TMDb logo shall not imply any endorsement by TMDb.
-
-// Footer with necessary info
+// Those saved inputs would then be accessed by the second page
+// Then the API call would run
 
 // Reference the API's as source of data
 // You shall use the TMDb logo to identify your use of the TMDb APIs.
@@ -58,33 +52,68 @@
 // Any use of the TMDb logo in your application shall be less prominent than the logo or mark that primarily describes the application and your use of the TMDb logo shall not imply any endorsement by TMDb.
 
 // Footer with necessary info
+
+var redirectURL = "./secondpage.html";
+
+// On search button click, grab input and select values
+$("#searchBtn").click(function() {
+    var ingredInput = $("#searchInput").val();
+    var genreInput = $("#genreSel").val();
+
+    // Then save to local storage
+    localStorage.setItem("ingredient", JSON.stringify(ingredInput));
+    localStorage.setItem("genre", JSON.stringify(genreInput));
+
+    location.replace(redirectURL);
+});
+
+// On indecisive button click, pass in random genre value and no ingredient value
+$("#indecisiveBtn").click(function() {
+    var ingredInput = "";
+
+    var genreArray = [
+        "28",
+        "12",
+        "16",
+        "35",
+        "80",
+        "99",
+        "18",
+        "10751",
+        "14",
+        "36",
+        "27",
+        "10402",
+        "9648",
+        "10749",
+        "878",
+        "10770",
+        "53",
+        "10752",
+        "37",
+    ];
+
+    for (var i = 0; i < genreArray.length; i++) {
+        var i = Math.floor(Math.random() * genreArray.length);
+        var genreInput = genreArray[i];
+        console.log(genreInput);
+    }
+
+    localStorage.setItem("genre", JSON.stringify(genreInput));
+    localStorage.setItem("ingredient", JSON.stringify(ingredInput));
+
+    location.replace(redirectURL);
+});
+
 // API fetching
-// Tasty
-// fetch("https://salty-mountain-68764.herokuapp.com/https://tasty.p.rapidapi.com/recipes/list?from=0&size=1&tags=under_30_minutes&q=chicken", {
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-key": "9db6727369mshcadc7a2e617b437p14279djsnff586e532c9e",
-// 		"x-rapidapi-host": "tasty.p.rapidapi.com"
-// 	}
-// })
-// .then(response => {
-// 	return response.json();
-// })
-// .then(data => {
-// 	console.log(data);
-// })
-// .catch(err => {
-// 	console.error(err);
-// });
-// The Movie Database or IMDB alternative (RapidAPI)
-// fetch("https://salty-mountain-68764.herokuapp.com/https://api.themoviedb.org/3/movie/550?api_key=1f0c12a5a877dc629a002fa2c6169442", {
-// })
-// .then(response => {
-// 	return response.json();
-// })
-// .then(data => {
-// 	console.log(data);
-// })
-// .catch(err => {
-// 	console.error(err);
-// });
+
+// Using DOM manipulation
+// Add the associated images, descriptions, recipe ingredients/instructions, names to the various parts of the cards
+
+// Re-rolling
+// Maybe store the API call results in local storage
+// Retrieve another random object from the returned array
+// Repeat the DOM manipulation with that new object?
+
+// Expanded recipe instructions/ingredients list
+// Upon clicking on the initial recipe card, display another card/modal(?) with a more detailed list
