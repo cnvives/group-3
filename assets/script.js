@@ -37,17 +37,7 @@
 // First try to display the next result from the API object array
 // If successful, try to randomize the re-roll result
 
-// Reference the API's as source of data
-
 // Footer with necessary info
-
-// console.log("connected");
-
-// Reference the API's as source of data
-// You shall use the TMDb logo to identify your use of the TMDb APIs.
-// You shall place the following notice prominently on your application: "This product uses the TMDb API but is not endorsed or certified by TMDb."
-// Any use of the TMDb logo in your application shall be less prominent than the logo or mark that primarily describes the application and your use of the TMDb logo shall not imply any endorsement by TMDb.
-
 
 // Local storage
     // saves the search inputs from the first/landing page in local storage
@@ -71,8 +61,6 @@ var redirectURL = './secondpage.html'
 $("#searchBtn").click(function(){
     var ingredInput = $("#searchInput").val();
     var genreInput = $("#genreSel").val();
-    // console.log(ingredInput);
-    // console.log(genreInput);
 
     // Then save to local storage
     localStorage.setItem("ingredient", JSON.stringify(ingredInput));
