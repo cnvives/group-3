@@ -14,7 +14,7 @@ var ingredientList = document.querySelector(".ingredientList");
 var instructionList = document.querySelector(".instructionList");
 
 // Primary function that runs on page load
-$(document).ready( function () {
+$(document).ready(function () {
     var ingredient = JSON.parse(localStorage.getItem("ingredient"));
     console.log(ingredient);
     var genre = JSON.parse(localStorage.getItem("genre"));

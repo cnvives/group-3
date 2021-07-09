@@ -70,6 +70,17 @@ $("#searchBtn").click(function(){
 
 });
 
+$("#indecisiveBtn").click(function(){
+
+    var genreArray = ["28", "12", "16", "35", "80", "99", "18", "10751", "14", "36", "27", "10402", "9648", "10749", "878", "10770", "53", "10752", "37"];
+
+    // var genreInput = random array[i];
+    localStorage.setItem("genre", JSON.stringify(genreInput));
+
+    location.replace(redirectURL);
+
+});
+
 // API fetching
 
 // Using DOM manipulation
