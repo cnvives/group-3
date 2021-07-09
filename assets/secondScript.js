@@ -11,6 +11,7 @@ var recipeInstructions = document.querySelector(".recipeInstructions");
 var recipeImage = document.querySelector(".recipeImage");
 var recipeIngredients = document.querySelector(".recipeIngredients");
 var ingredientList = document.querySelector(".ingredientList");
+var instructionList = document.querySelector(".instructionList");
 
 // Primary function that runs on page load
 $(document).ready( function () {
@@ -49,6 +50,17 @@ $(document).ready( function () {
 
             ingredientList.appendChild(ingredientItem)
         }
+
+        for (var index = 0; index < data.results[i].instructions.length; index++) {
+             
+            var instructionItem = document.createElement("li");
+
+            instructionItem.textContent = data.results[i].instructions[index].display_text;
+
+            instructionList.appendChild(instructionItem)
+        }
+
+        // Add if statement to remove canonical_id's that contain "compilation" (data.results[index].canonical_id != compilation)
         
         console.log(data.results[i].name);
     })
