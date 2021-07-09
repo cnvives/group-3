@@ -145,19 +145,6 @@ a.bulmaLink:hover {
 
 .navHome {
     color: #E50914;
-<<<<<<< HEAD
-    font-weight: bold;
-}
-
-.navbar-item :hover{
-color:white !important;
-}
-
-.navbar-dropdown {
-box-shadow: 10px 10px 14px 0px rgba(229,9,20,0.75);
--webkit-box-shadow: 10px 10px 14px 0px rgba(229,9,20,0.75);
--moz-box-shadow: 10px 10px 14px 0px rgba(229,9,20,0.75);
-=======
 }
 
 .navHome:hover {
@@ -171,5 +158,4 @@ a.navLink {
 .bulmaFooter {
     width: fit-content;
     margin: auto;
->>>>>>> 6e7b285fa8f97dfbb01d60429849f2eed7a971ee
 }
