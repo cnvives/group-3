@@ -1,7 +1,9 @@
 // Movie card variables
 var movieTitle = document.querySelector(".movieTitle");
 var releaseDate = document.querySelector(".releaseDate");
-var overview =document.querySelector(".overview");
+
+var overview = document.querySelector(".overview");
+
 var moviePoster = document.querySelector(".movieImage");
 // var movieRating =();
 
@@ -14,11 +16,14 @@ var ingredientList = document.querySelector(".ingredientList");
 var instructionList = document.querySelector(".instructionList");
 
 // Primary function that runs on page load
-$(document).ready(function () {
+
+$(document).ready(function() {
+
     var ingredient = JSON.parse(localStorage.getItem("ingredient"));
     console.log(ingredient);
     var genre = JSON.parse(localStorage.getItem("genre"));
     console.log(genre);
+
     
     // Recipe api fetch request for recipe card details
     fetch(`https://salty-mountain-68764.herokuapp.com/https://tasty.p.rapidapi.com/recipes/list?from=0&size=100&tags=date_night&q=${ingredient}`, {
@@ -106,14 +111,15 @@ $(document).ready(function () {
             console.log(data.results[i].poster_path);
         })
         .catch(err => {
+
             console.error(err);
         });
 });
 
-   
 // Re-roll recipe api fetch request
 
 $("#recipeReroll").click(randomRecipeFetch);
+
 
     function randomRecipeFetch() {
         localStorage.clear();
@@ -177,10 +183,12 @@ $("#recipeReroll").click(randomRecipeFetch);
     .catch(err => {
         console.error(err);
     });
+
 }
 
 // Re-roll movie api fetch request
 $("#movieReroll").click(randomMovieFetch);
+
 
     function randomMovieFetch() {
         localStorage.clear();

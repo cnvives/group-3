@@ -1,5 +1,6 @@
 html,
 body {
+
     background-color: black;
     height: 100%;
     font-family: 'Noto Sans JP', sans-serif;
@@ -14,7 +15,8 @@ body {
     justify-content: center;
     width: 100%;
     padding: 5px;
-    margin-left: 20px; right: 20px;
+    margin-left: 20px;
+    right: 20px;
     margin-top: 3px;
     font-size: 150%;
     font-weight: bold;
@@ -25,13 +27,19 @@ body {
 }
 
 .button.is-primary {
-    background-color: #333;
+    background-color: black;
     border-color: transparent;
-    color: rgb(255, 255, 255);
+    color: red;
+}
+
+.button.is-primary:hover {
+    background-color: red;
+    color: black;
 }
 
 .button {
-    color: #1DA1F2;
+    color: #1da1f2;
+
 }
 
 .navbar,
@@ -39,7 +47,8 @@ body {
 .navbar-dropdown,
 .navbar-link {
     background-color: black;
-    color: #E50914;
+    color: #e50914;
+
     font-weight: bold;
 }
 
@@ -52,8 +61,11 @@ body {
 
 a.bulmaLink,
 a.bulmaLink:hover {
-    background-color: #E50914 !important;
+
+    background-color: #e50914 !important;
     border-radius: 10px;
+    margin-top: 10px;
+
 }
 
 .inputHolder {
@@ -73,7 +85,7 @@ a.bulmaLink:hover {
 }
 
 .subtitle {
-    color: #E50914;
+    color: #e50914;
     font-weight: bold;
     text-align: center;
 }
@@ -88,18 +100,22 @@ a.bulmaLink:hover {
     margin-top: 4px;
     padding: 10px;
     width: 30%;
-    border: 3px solid #E50914;
+    border: 3px solid #e50914;
     background-color: white;
-    color: #E50914;
+    color: #e50914;
+
 }
 
 .select {
     display: flex;
     margin: auto;
-    color: #E50914;
+
+    color: #e50914;
 }
 
-.navbar-link:not(.is-arrowless)::after, .select:not(.is-multiple):not(.is-loading)::after {
+.navbar-link:not(.is-arrowless)::after,
+.select:not(.is-multiple):not(.is-loading)::after {
+
     border: none;
 }
 
@@ -107,9 +123,9 @@ a.bulmaLink:hover {
     display: flex;
     margin: auto;
     width: 30%;
-    border: 3px solid #E50914;
+    border: 3px solid #e50914;
     background-color: white;
-    color: #E50914;
+    color: #e50914;
 }
 
 .searchBtn {
@@ -117,9 +133,9 @@ a.bulmaLink:hover {
     margin: auto;
     margin-top: 4px;
     padding: 10px;
-    border: 3px solid #E50914;
+    border: 3px solid #e50914;
     background-color: black;
-    color: #E50914;
+    color: #e50914;
     font-weight: bold;
 }
 
@@ -129,26 +145,28 @@ a.bulmaLink:hover {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 1px;
-    padding-top: 20px; left: 24px; right: 24px;
+    padding-top: 20px;
+    left: 24px;
+    right: 24px;
 }
 
 .database {
     color: red;
-    font-size:small;
+    font-size: small;
 }
 
 .databaseName {
     color: red;
-    font-size:small;
+    font-size: small;
 }
 
 .navLink:hover {
     color: white !important;
-    background-color: #E50914 !important;
+    background-color: #e50914 !important;
 }
 
 .navHome {
-    color: #E50914;
+    color: #e50914;
 }
 
 .navHome:hover {
@@ -162,4 +180,9 @@ a.navLink {
 .bulmaFooter {
     width: fit-content;
     margin: auto;
+}
+
+.is-rounded::placeholder {
+    color: red;
+
 }
