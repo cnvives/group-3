@@ -118,3 +118,13 @@ footer {
     color: #E50914;
     font-weight: bold;
 }
+
+.navbar-item :hover{
+color:white !important;
+}
+
+.navbar-dropdown {
+box-shadow: 10px 10px 14px 0px rgba(229,9,20,0.75);
+-webkit-box-shadow: 10px 10px 14px 0px rgba(229,9,20,0.75);
+-moz-box-shadow: 10px 10px 14px 0px rgba(229,9,20,0.75);
+}
