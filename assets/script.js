@@ -70,15 +70,23 @@ $("#searchBtn").click(function(){
 
 });
 
+// On indecisive button click, pass in random genre value and no ingredient value
 $("#indecisiveBtn").click(function(){
+
+    var ingredInput = "";
 
     var genreArray = ["28", "12", "16", "35", "80", "99", "18", "10751", "14", "36", "27", "10402", "9648", "10749", "878", "10770", "53", "10752", "37"];
 
-    // var genreInput = random array[i];
+    for (var i = 0; i < genreArray.length; i++) {
+        var i = Math.floor(Math.random() * genreArray.length)
+        var genreInput = genreArray[i];
+        console.log(genreInput);
+    }
+
     localStorage.setItem("genre", JSON.stringify(genreInput));
+    localStorage.setItem("ingredient", JSON.stringify(ingredInput));
 
     location.replace(redirectURL);
-
 });
 
 // API fetching
