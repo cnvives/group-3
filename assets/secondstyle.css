@@ -4,6 +4,10 @@ body {
     height: 100%;
 }
 
+.navbar-brand {
+    width: 300px;
+}
+
 .navTitle {
     display: flex;
     justify-content: center;
