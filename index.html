@@ -20,9 +20,6 @@
     <section>
       <nav class="navbar is-transparent">
         <div class="navbar-brand">
-          <!-- <a class="navbar-item" href="#">
-            <img src="https://bulma.io/images/bulma-logo.png" alt="" width="112" height="28">
-          </a> -->
           <h1 class="navTitle">Netflix & Grill</h1>
           <div class="navbar-burger" data-target="navbarExampleTransparentExample">
             <span></span>
@@ -33,21 +30,21 @@
       
         <div id="navbarExampleTransparentExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item" href="https://bulma.io/">
+            <a class="navbar-item navHome" href="https://bulma.io/">
               Home
             </a>
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
                 Docs
               </a>
-              <div class="navbar-dropdown is-boxed">
-                <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+              <div class="navbar-dropdown is-boxed dropdownBackground">
+                <a class="navbar-item navLink" href="https://bulma.io/documentation/overview/start/">
                   Movies
                 </a>
-                <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+                <a class="navbar-item navLink" href="https://bulma.io/documentation/overview/modifiers/">
                   Recipes
                 </a>
-                <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                <a class="navbar-item navLink" href="https://bulma.io/documentation/columns/basics/">
                   Our Github Page
                 </a>
               </div>
@@ -58,17 +55,12 @@
             <div class="navbar-item">
               <div class="field is-grouped">
                 <p class="control">
-                  <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="#">
-                    <span class="icon">
-                      <i class="fab fa-twitter"></i>
-                    </span>
-                    <span>
-                      Tweet
-                    </span>
+                  <a class="navbar-item button is-primary bulmaLink" href="https://bulma.io">
+                    <img class="bulmaLink" src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
                   </a>
                 </p>
                 <p class="control">
-                  <a class="button is-primary" href="#">
+                  <a class="button is-primary" href="https://github.com/cnvives/group-3" target="_blank">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -129,8 +121,16 @@
 
     </section>
 
-    <footer>
-        Created by... 2021
+    <footer class="footer"> 
+      <div class="database">Recipe provided by <a href="https://tasty.co/" target="_blank">Tasty</a></div>
+
+    <div class="databaseName">Movies provided by The Movie Database <a href="https://www.themoviedb.org/" target="_blank">(TMDB)</a></div>
+
+    <div class="database bulmaFooter">
+      <a class="navbar-item bulmaLink" href="https://bulma.io" target="_blank">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </a>
+    </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
