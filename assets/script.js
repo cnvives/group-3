@@ -40,18 +40,12 @@
 // Footer with necessary info
 
 // Local storage
-// saves the search inputs from the first/landing page in local storage
-// Then redirect to the second page
+    // saves the search inputs from the first/landing page in local storage
+        // Then redirect to the second page
 
-// Those saved inputs would then be accessed by the second page
-// Then the API call would run
+    // Those saved inputs would then be accessed by the second page 
+        // Then the API call would run
 
-// Reference the API's as source of data
-// You shall use the TMDb logo to identify your use of the TMDb APIs.
-// You shall place the following notice prominently on your application: "This product uses the TMDb API but is not endorsed or certified by TMDb."
-// Any use of the TMDb logo in your application shall be less prominent than the logo or mark that primarily describes the application and your use of the TMDb logo shall not imply any endorsement by TMDb.
-
-// Footer with necessary info
 
 var redirectURL = "./secondpage.html";
 
@@ -105,15 +99,54 @@ $("#indecisiveBtn").click(function() {
     location.replace(redirectURL);
 });
 
+
+// Footer with necessary info
+
+
+var redirectURL = './secondpage.html'
+
+// On search button click, grab input and select values
+$("#searchBtn").click(function(){
+    var ingredInput = $("#searchInput").val();
+    var genreInput = $("#genreSel").val();
+
+    // Then save to local storage
+    localStorage.setItem("ingredient", JSON.stringify(ingredInput));
+    localStorage.setItem("genre", JSON.stringify(genreInput));
+
+    location.replace(redirectURL);
+
+});
+
+// On indecisive button click, pass in random genre value and no ingredient value
+$("#indecisiveBtn").click(function(){
+
+    var ingredInput = "";
+
+    var genreArray = ["28", "12", "16", "35", "80", "99", "18", "10751", "14", "36", "27", "10402", "9648", "10749", "878", "10770", "53", "10752", "37"];
+
+    for (var i = 0; i < genreArray.length; i++) {
+        var i = Math.floor(Math.random() * genreArray.length)
+        var genreInput = genreArray[i];
+        console.log(genreInput);
+    }
+
+    localStorage.setItem("genre", JSON.stringify(genreInput));
+    localStorage.setItem("ingredient", JSON.stringify(ingredInput));
+
+    location.replace(redirectURL);
+});
+
 // API fetching
 
 // Using DOM manipulation
-// Add the associated images, descriptions, recipe ingredients/instructions, names to the various parts of the cards
+    // Add the associated images, descriptions, recipe ingredients/instructions, names to the various parts of the cards
 
-// Re-rolling
-// Maybe store the API call results in local storage
-// Retrieve another random object from the returned array
-// Repeat the DOM manipulation with that new object?
+// Re-rolling 
+    // Maybe store the API call results in local storage
+    // Retrieve another random object from the returned array 
+    // Repeat the DOM manipulation with that new object?
 
 // Expanded recipe instructions/ingredients list
-// Upon clicking on the initial recipe card, display another card/modal(?) with a more detailed list
+    // Upon clicking on the initial recipe card, display another card/modal(?) with a more detailed list
+

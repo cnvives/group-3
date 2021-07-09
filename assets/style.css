@@ -1,5 +1,6 @@
 html,
 body {
+
     background-color: black;
     height: 100%;
 }
@@ -33,6 +34,7 @@ body {
 
 .button {
     color: #1da1f2;
+
 }
 
 .navbar,
@@ -41,6 +43,7 @@ body {
 .navbar-link {
     background-color: black;
     color: #e50914;
+
     font-weight: bold;
 }
 
@@ -53,22 +56,24 @@ body {
 
 a.bulmaLink,
 a.bulmaLink:hover {
+
     background-color: #e50914 !important;
     border-radius: 10px;
     margin-top: 10px;
+
 }
 
 .inputHolder {
     padding: 10px;
     margin: auto;
-    border: 3px solid #e50914;
+    border: 3px solid #E50914;
     background-color: black;
     border-radius: 10px;
-    box-shadow: 8px 8px 15px #e50914;
+    box-shadow: 8px 8px 15px #E50914;
 }
 
 .inputTitle {
-    color: #e50914;
+    color: #E50914;
     font-weight: bold;
     font-size: 200%;
     text-align: center;
@@ -93,16 +98,19 @@ a.bulmaLink:hover {
     border: 3px solid #e50914;
     background-color: white;
     color: #e50914;
+
 }
 
 .select {
     display: flex;
     margin: auto;
+
     color: #e50914;
 }
 
 .navbar-link:not(.is-arrowless)::after,
 .select:not(.is-multiple):not(.is-loading)::after {
+
     border: none;
 }
 
@@ -171,4 +179,5 @@ a.navLink {
 
 .is-rounded::placeholder {
     color: red;
+
 }
