@@ -90,6 +90,7 @@ a.bulmaLink:hover {
 }
 
 .select {
+
     display: flex;
     margin: auto;
     color: #E50914;
