@@ -117,7 +117,6 @@ $(document).ready(function() {
 // Re-roll recipe api fetch request
 $("#recipeReroll").click(randomRecipeFetch);
 
-
     function randomRecipeFetch() {
         localStorage.clear();
         ingredientList.innerHTML = "";
@@ -180,12 +179,10 @@ $("#recipeReroll").click(randomRecipeFetch);
     .catch(err => {
         console.error(err);
     });
-
 }
 
 // Re-roll movie api fetch request
 $("#movieReroll").click(randomMovieFetch);
-
 
     function randomMovieFetch() {
         localStorage.clear();
