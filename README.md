@@ -8,7 +8,7 @@ Group 3 has created Pickflix & Grill, a movie and recipe generator that takes in
 Link to live deployed app:  https://cnvives.github.io/group-3/
 
 ## Purpose
-We can all be indecisive from time to time.  Making dinner and movie decisions can be especially difficult.  That is why we have created Pickflix & Grill!  With this web application, a user can choose a genre of movie they would like to watch along with a recipe ingredient they currently have at home, and they will be provided with a movie recommendation and a recipe that can be made in under 30 minutes!  Or, if you would like to just have us decide, click the "I'm feeling indecisive" button and let the app do the hard work for you!
+We can all be indecisive from time to time.  Making dinner and movie decisions can be especially difficult.  That is why we have created Pickflix & Grill!  With this web application, a user can choose a genre of movie they would like to watch along with a recipe ingredient they currently have at home, and they will be provided with a movie recommendation and a recipe that can be made for date night!  Or, if you would like to just have us decide, click the "I'm feeling indecisive" button and let the app do the hard work for you!
 
 ## Technologies used
 This project was coded using JavaScript, HTML, and CSS.  Bulma was used as the underlying framework.  We have created this application to access The Movie Database (TMDB) API for movies and the Tasty API for recipes.
