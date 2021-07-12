@@ -28,7 +28,6 @@ harrisonakidd@gmail.com
 Zhansaya Sarmanova <br>
 zhansayasarmanova1993@gmail.com 
 <br>
-
 Einstein Dalmau <br>
 enty84@gmail.com <br>
 
