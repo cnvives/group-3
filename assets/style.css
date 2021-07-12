@@ -1,6 +1,5 @@
 html,
 body {
-
     background-color: black;
     height: 100%;
     font-family: 'Noto Sans JP', sans-serif;
@@ -48,7 +47,6 @@ body {
 .navbar-link {
     background-color: black;
     color: #e50914;
-
     font-weight: bold;
 }
 
@@ -61,7 +59,6 @@ body {
 
 a.bulmaLink,
 a.bulmaLink:hover {
-
     background-color: #e50914 !important;
     border-radius: 10px;
     margin-top: 10px;
@@ -109,13 +106,11 @@ a.bulmaLink:hover {
 .select {
     display: flex;
     margin: auto;
-
     color: #e50914;
 }
 
 .navbar-link:not(.is-arrowless)::after,
 .select:not(.is-multiple):not(.is-loading)::after {
-
     border: none;
 }
 
