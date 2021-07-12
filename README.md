@@ -26,4 +26,6 @@ Harrison Kidd <br>
 harrisonakidd@gmail.com
 <br>
 
+Einstein Dalmau <br>
+enty84@gmail.com <br>
 
