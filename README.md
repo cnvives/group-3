@@ -30,4 +30,6 @@ zhansayasarmanova1993@gmail.com
 <br>
 Einstein Dalmau <br>
 enty84@gmail.com <br>
+Cas Vives-Petralia <br>
+cnvives@gmail.com <br>
 
