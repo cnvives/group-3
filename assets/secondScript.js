@@ -55,7 +55,6 @@ $(document).ready(function () {
         console.log(data.results[i].name);
 
         recipeImage.src=data.results[i].thumbnail_url;
-        // console.log(data.results[i].thumbnail_url);
 
         for (var index = 0; index < data.results[i].sections[0].components.length; index++) {
              
@@ -112,7 +111,6 @@ $(document).ready(function () {
 
    
 // Re-roll recipe api fetch request
-
 $("#recipeReroll").click(randomRecipeFetch);
 
     function randomRecipeFetch() {
