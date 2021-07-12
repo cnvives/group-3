@@ -25,5 +25,9 @@ This project was coded using JavaScript, HTML, and CSS.  Bulma was used as the u
 Harrison Kidd <br>
 harrisonakidd@gmail.com
 <br>
-
+Zhansaya Sarmanova <br>
+zhansayasarmanova1993@gmail.com 
+<br>
+Einstein Dalmau <br>
+enty84@gmail.com <br>
 
